@@ -153,12 +153,13 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
-  background-image: 
-  linear-gradient(to right, #4f4f4f2e 1px, transparent 1px), 
+  background-image:
+  linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
   linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
-  background-size: 60px 55px; 
-  -webkit-mask-image: radial-gradient(ellipse at 50% 0%, #000 70%, transparent 110%); 
-  mask-image: radial-gradient(ellipse at 50% 0%, #000 70%, transparent 110%); 
+  background-size: 60px 55px;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+
 }
 
 .section__pic-container {
@@ -417,6 +418,13 @@ article .icon {
 footer {
   height: 20vh;
   margin: 0 1rem;
+  background-image:
+  linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
+  linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
+  background-size: 60px 55px;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+
 }
 
 footer p {
