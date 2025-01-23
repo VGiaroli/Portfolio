@@ -1,281 +1,224 @@
 <!DOCTYPE html>
 <html lang="sp">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Valentín Giaroli</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Valentín Giaroli</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mi</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Valentín Giaroli</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Acerca de</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- ARROW UP -->
+  <div class="general">
+    <a href='#' class='scroll-top'>
+      <svg height='35' viewBox='0 0 24 24' width='35' xmlns='http://www.w3.org/2000/svg'>
+        <path d='M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z' />
+        <path d='M0 0h24v24H0z' fill='none' />
+      </svg>
+    </a>
+  </div>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./img/fotolink.png" alt="Valentín Giaroli profile picture">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hola! Soy</p>
+      <h1 class="title">Valentín Giaroli</h1>
+      <p class="section__text__p2">Full Stack Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./curriculum/ValentinGiaroliCV.pdf', '_blank')">Descargar
+          CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contacto</button>
+      </div>
+      <div id="socials-container">
+        <img src="./img/linkedin.png" alt="Mi perfil de LinkedIn" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/valent%C3%ADn-giaroli-326899251/'" />
+        <img src="./img/github.png" alt="Mi perfil de GitHub" class="icon"
+          onclick="location.href='https://github.com/VGiaroli'" />
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <p class="section__text__p1">Conozca más</p>
+    <h1 class="title">Acerca de mí</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./img/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experiencia</h3>
+            <p>Desarrolador Junior <br />Desarrollo Front-end | Full Stack</p>
+          </div>
+          <div class="details-container">
+            <img src="./img/education.png" alt="Education icon" class="icon" />
+            <h3>Educación</h3>
+            <p>Instituto Superior "María Justa Moyano de Ezpeleta"<br /></p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Soy una persona proactiva, comprometida con los
+            objetivos de la empresa y con un enfoque constante en el
+            aprendizaje de nuevas habilidades. Me esfuerzo por
+            anticipar necesidades, tomar la iniciativa y aportar
+            soluciones innovadoras, siempre buscando contribuir al
+            crecimiento y éxito de la organización.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+
+  <section id="experience">
+    <p class="section__text__p1">Explora mi</p>
+    <h1 class="title">Experiencia</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./img/html.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML5</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./img/css.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./img/bootstrap.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Bootstrap</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./img/javascript.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./img/vscode.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Visual Studio Code</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./img/sql-server.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SQL Server</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./img/csharp.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C#</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./img/jquery.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>jQuery</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./img/github.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>GitHub</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./img/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Ponerse en contacto</p>
+    <h1 class="title">Contáctame</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./img/gmail-icon.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="https://www.google.com/intl/es-419/gmail/about/">valegiaroli2016@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./img/Lkdin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/valent%C3%ADn-giaroli-326899251/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
-          <li><a href="#about">Sobre mi</a></li>
+          <li><a href="#about">Acerca de</a></li>
           <li><a href="#experience">Experiencia</a></li>
           <li><a href="#projects">Proyectos</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Valentín Giaroli</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">Acerca de</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
-        </div>
-      </div>
-    </nav>
-
-    
-
-    <!-- ARROW UP -->
-    <div class="general">
-      <a href='#' class='scroll-top'>
-          <svg height='35' viewBox='0 0 24 24' width='35' xmlns='http://www.w3.org/2000/svg'>
-             <path d='M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z'/>
-             <path d='M0 0h24v24H0z' fill='none'/>
-          </svg>
-      </a>
-    </div>
-
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./img/fotolink.png" alt="Valentín Giaroli profile picture">
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hola! Soy</p>
-        <h1 class="title">Valentín Giaroli</h1>
-        <p class="section__text__p2">Full Stack Developer</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./curriculum/ValentinGiaroliCV.pdf', '_blank')">Descargar CV</button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contacto</button>
-        </div>
-        <div id="socials-container">
-          <img src="./img/linkedin.png" alt="Mi perfil de LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/valent%C3%ADn-giaroli-326899251/'" />
-          <img src="./img/github.png" alt="Mi perfil de GitHub" class="icon" onclick="location.href='https://github.com/VGiaroli'" />
-        </div>
-      </div>
-    </section>
-    
-
-    <section id="about">
-      <p class="section__text__p1">Conozca más</p>
-      <h1 class="title">Acerca de mí</h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./img/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experiencia</h3>
-              <p>Desarrolador Junior <br />Desarrollo Front-end | Full Stack</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./img/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Educación</h3>
-              <p>Instituto Superior "María Justa Moyano de Ezpeleta"<br /></p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Soy una persona proactiva, comprometida con los
-              objetivos de la empresa y con un enfoque constante en el
-              aprendizaje de nuevas habilidades. Me esfuerzo por
-              anticipar necesidades, tomar la iniciativa y aportar
-              soluciones innovadoras, siempre buscando contribuir al
-              crecimiento y éxito de la organización.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./img/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    
-
-    <section id="experience">
-      <p class="section__text__p1">Explora mi</p>
-      <h1 class="title">Experiencia</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./img/html.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML5</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./img/css.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./img/bootstrap.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Bootstrap</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./img/javascript.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./img/vscode.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Visual Studio Code</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./img/sql-server.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL Server</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./img/csharp.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C#</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./img/jquery.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>jQuery</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./img/github.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>GitHub</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./img/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-
-    <section id="contact">
-      <p class="section__text__p1">Ponerse en contacto</p>
-      <h1 class="title">Contáctame</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./img/gmail-icon.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="https://www.google.com/intl/es-419/gmail/about/">valegiaroli2016@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./img/Lkdin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/valent%C3%ADn-giaroli-326899251/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">Acerca de</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Valentín Giaroli. Reservados todos los derechos.</p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <p>Copyright &#169; 2025 Valentín Giaroli. Reservados todos los derechos.</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
