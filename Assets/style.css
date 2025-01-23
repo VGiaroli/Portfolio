@@ -9,12 +9,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: 
-    linear-gradient(to right, #4f4f4f2e 1px, transparent 1px), 
-    linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
-  background-size: 60px 55px; 
-  -webkit-mask-image: radial-gradient(ellipse at 50% 0%, #000 70%, transparent 110%); 
-          mask-image: radial-gradient(ellipse at 50% 0%, #000 70%, transparent 110%); 
 }
 
 html {
@@ -38,7 +32,7 @@ nav, .nav-links {
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 13vh;
 }
 
 .nav-links {
@@ -144,7 +138,7 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  /* margin: 0 10rem; */
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -159,6 +153,12 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  background-image: 
+  linear-gradient(to right, #4f4f4f2e 1px, transparent 1px), 
+  linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
+  background-size: 60px 55px; 
+  -webkit-mask-image: radial-gradient(ellipse at 50% 0%, #000 70%, transparent 110%); 
+  mask-image: radial-gradient(ellipse at 50% 0%, #000 70%, transparent 110%); 
 }
 
 .section__pic-container {
@@ -264,6 +264,7 @@ section {
 
 #about {
   position: relative;
+  margin: 0 10rem; 
 }
 
 .about-containers {
@@ -328,6 +329,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+   margin: 0 10rem; 
 }
 
 .article-container {
@@ -413,7 +415,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  height: 20vh;
   margin: 0 1rem;
 }
 
